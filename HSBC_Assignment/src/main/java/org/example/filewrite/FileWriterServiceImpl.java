@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class FileWriterServiceImpl implements FileWriterService<Path, String> {
+public class FileWriterServiceImpl implements FileWriterService<Path, String, String> {
     @Override
     public String writeFileContents(Path writerPath, String wordsReadFromFile) throws IOException {
 

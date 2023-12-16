@@ -15,7 +15,7 @@ class FileWriterServiceImplTest {
     void writeFileContents() throws IOException {
         FileWriterService fileWriterService = new FileWriterServiceImpl();
         Path tempFile = FileSystems.getDefault().getPath("src","test","resources", "inputfile.txt");
-        String filecontent = fileWriterService.writeFileContents(tempFile,"CBA");
+        String filecontent = (String) fileWriterService.writeFileContents(tempFile,"CBA");
         assertEquals("CBA",filecontent);
     }
 }
